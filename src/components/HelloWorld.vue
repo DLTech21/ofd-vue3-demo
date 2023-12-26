@@ -2,11 +2,20 @@
 import {Ofdview} from 'ofdview-vue3';
 import * as parser from 'parser_x.js'
 import {ref} from 'vue'
+import axios from 'axios'
 
-defineProps<{ msg: string }>()
+axios({
+  method: 'get',
+  url: 'https://cmimg.maycur.com/front-static-resource/test/3c51333a0392fe9e47d89dd48e28789d.ofd',
+  data: {},
+  responseType: 'arraybuffer'
+}).then(res => {
+  console.log(res.data)
+})
 
-const count = ref(0)
-
+function closePage() {
+  console.log('sdsfsdf')
+}
 
 </script>
 
@@ -14,6 +23,10 @@ const count = ref(0)
   <div style="height: 100vh;">
     <Ofdview
         :mem="parser"
+        water_text="自定义水印内容"
+        :canClose="true"
+        :file="msg"
+        @closePage="closePage"
     ></Ofdview>
   </div>
 </template>
