@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "ofdview-vue3": "1.0.11",
-    "parser_x.js": "1.1.14",
+    "parser_x.js": "1.1.19",
     "vue": "^3.2.47"
   },
   "devDependencies": {

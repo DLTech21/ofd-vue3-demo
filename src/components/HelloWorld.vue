@@ -14,6 +14,7 @@ const count = ref(0)
   <div style="height: 100vh;">
     <Ofdview
         :mem="parser"
+        :canClose="true"
     ></Ofdview>
   </div>
 </template>
