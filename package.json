@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "parser_x.js": "1.1.60",
+    "parser_x.js": "^1.1.66",
     "ofdview-vue3": "1.0.28",
     "vue": "^3.2.47"
   },
